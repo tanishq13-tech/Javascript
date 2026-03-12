@@ -12,6 +12,23 @@ console.log(gameName._proto_);
 console.log(gameName.length);
 console.log(gameName.toUpperCase());
 console.log(gameName.charAt(2));
+console.log(gameName.indexOf('t'));
+
+const newString = gameName.substring(0,4)
+console.log(newString);
+
+const anotherString = gameName.slice(-5,4)
+console.log(anotherString);
+
+const newStringOne = "   Tanishq   "
+console.log(newStringOne);
+console.log(newStringOne.trim());
+
+const url = "https://user.com/user%20abc"
+console.log(url.replace('%20', '-'));
+console.log(url.includes('y'));
+console.log(url.split('y'));
+console.log(gameName.split('i'));
 
 
 
