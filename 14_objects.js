@@ -37,9 +37,31 @@ const users = [
 
 console.log(users[1].email);
 console.log(tinderUser);
-console.log(Object.keys(tinderUser));
+console.table(Object.keys(tinderUser));
 console.log(Object.values(tinderUser));
 console.log(Object.entries(tinderUser));
 
 console.log(tinderUser.hasOwnProperty('isLoggedIn')); // to check here the property exists or not.
 
+const course = {
+    coursename : "javascript",
+    price: "99",
+    courseInstructor: "User"
+}
+//ways of calling
+console.log(course.courseInstructor);
+
+const {courseInstructor} = course  // destructuring
+console.log(courseInstructor);
+
+const {courseInstructor: instructer} = course
+console.log(instructer);
+//
+
+/*   *** JSON Structure ***
+{
+    "name": "user",
+    "course" : "JS",
+    "price": "free"
+}
+*/
