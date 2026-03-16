@@ -1,6 +1,6 @@
 "use strict"; // treat all Js code as newer versiion
 
-// alert(3+3) // we arre using node js , not browser
+// alert(3+3) // we are using node js , not browser
 
 let name = "tanishq"
 let age = 19
@@ -11,7 +11,7 @@ let isloggedIn = true
 // string => " "
 // boolean => true/ false
 // null => standalone value // for  showing 0 // object
-// undefined => 
+// undefined => undefined
 // symbol => unique
 
 // object
