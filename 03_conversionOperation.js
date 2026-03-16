@@ -24,7 +24,7 @@ let stringNumber = String(someNumber)
 console.log(stringNumber)
 console.log(typeof stringNumber);
 
-// **************__________________operations____________________________________________________________********
+// ********_________________________________operations______________________________________________********
 
 
 let value = 3
