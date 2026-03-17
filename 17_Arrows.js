@@ -30,3 +30,14 @@ const thissss = () => {
     console.log(this.username);
 }
 thissss()
+
+
+const addTwo = (num1, num2) => {
+    return num1 + num2         //explcit return
+}
+console.log(addTwo(3,4));
+
+//const addTwoo = (num1, num2) => num1 + num2  // implicit return
+const addTwoo = (num1, num2) => (num1 + num2)   // {} needs return but () need not return
+console.log(addTwoo(3,4));
+const object = (num1, num2) => ({username: "user"})   // for defining object
