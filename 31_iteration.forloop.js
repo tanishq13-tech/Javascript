@@ -19,6 +19,19 @@ for (let i = 0; i < 0; i++) {
     console.log(``);
 }
 
-let Array = ["flash", "batman", "superman"]
-console.log(Array.length);
+let array = ["flash", "batman", "superman"]
+console.log(array.length);
+for (let index = 0; index < array.length; index++) {
+    const element = array[index];
+    console.log(element); 
+}
 
+// break and continue
+
+for (let index = 0; index <= 20; index++) {
+    if (index == 5) {
+        console.log("5 is detected");
+        continue  // aur break
+    }    
+    console.log(`Value of i is ${index}`)
+}
