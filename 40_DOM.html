@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body style="background-color: black; color: aliceblue;">
+    <input id="add"  type="text">
+    <button onclick="addOptiLanguage()">Get Value</button>
+    <input id="n"  type="number">
+    <button onclick="replace()">Get Value</button>
+    <input id="toReplace"  type="text">
+    <button onclick="replace()">Get Value</button>
+    <ul class="languages">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+ // add   
+    function addLanguage(langName) {                      // Normal Way
+        const li = document.createElement('li');
+        li.innerText = `${langName}`;
+        document.querySelector(".languages").appendChild(li)
+    }
+    //addLanguage(Ruby)
+    
+    function addOptiLanguage() {                     // Optimised Way => in which element is directly added at the bottom without traversing upper elements
+         let element = document.getElementById("add");
+         let value = element.value
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(value))
+        document.querySelector(".languages").appendChild(li)
+    }
+// edit
+    function replace() {
+        let element = document.getElementById("n");
+         let n = element.value
+         console.log(n)
+         let element2 = document.getElementById("toReplace");
+         let toReplace = element2.value
+         console.log(toReplace)
+        const secondlang = document.querySelector(`li:nth-child(${n})`)
+        //secondlang.innerText = `${toReplce}`
+        const newLang = document.createElement('li')
+        newLang.textContent = `${toReplace}`
+        secondlang.replaceWith(newLang)
+    }
+// edit
+    const firstlang = document.querySelector("li:first-child")
+    firstlang.outerHTML = "<li>TypeScript</li>"
+
+// remove
+    const lastlang = document.querySelector("li:last-child")
+    lastlang.remove()
+</script>
+</html>
