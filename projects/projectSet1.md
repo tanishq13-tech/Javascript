@@ -1,6 +1,6 @@
 # Project Related to Dom
 
-## project link
+## Project link
 
 [Click Here](https://stackblitz.com/~/github.com/tanishq13-tech/dom-project-by-tanishq?file=1-colorChanger/script.js)
 
